@@ -1,23 +1,19 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+// import { StyleSheet, Image, Text, View, Button } from 'react-native';
+
+// import {createStackNavigator} from "react-navigation";
+
+import SplashScreen from './src/SplashScreen/SplashScreen'; 
+
 
 export default class App extends React.Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-        <Text>The Beer Search</Text>
-        <Text>Shake your phone to open the developer menu.</Text>
-      </View>
+      <SplashScreen/>
     );
   }
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+
+
+
