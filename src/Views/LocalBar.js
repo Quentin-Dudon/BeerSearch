@@ -11,8 +11,6 @@ export default class LocalBar extends Component {
   }
 }
 
-
-
 const styles = StyleSheet.create({
   textFirst: {
     fontSize: 50,
