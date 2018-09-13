@@ -1,6 +1,5 @@
 import React from "react";
 import { Image } from 'react-native';
-
 import { createBottomTabNavigator } from "react-navigation";
 
 import Home from '../Views/Home'; 
@@ -56,15 +55,16 @@ export const Tab = createBottomTabNavigator({
     tabBarOptions: {
       showIcon: true,
       style: {
-        height: 100
+        height: 70
       },
       activeTintColor: '#f2f2f2',
-      activeBackgroundColor: "#2EC4B6",
+      activeBackgroundColor: "#e65c00",
       inactiveTintColor: '#666',
       labelStyle: {
         fontSize: 15,
-        padding: 10,
-        margin: 5
+        paddingBottom: 5,
+        marginTop: 0,
+        paddingTop: 0,
       }
   }
 });
