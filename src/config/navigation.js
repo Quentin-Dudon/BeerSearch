@@ -1,22 +1,22 @@
 import React from "react";
 import { Image } from 'react-native';
 import { createBottomTabNavigator } from "react-navigation";
+import {NavToBarTemplate} from "./NavToBarTemplate";
 
-import Home from '../Views/Home'; 
 import LocalBar from '../Views/LocalBar'; 
 import PopularBar from '../Views/PopularBar'; 
-import Feedback from '../Views/Feedbacks'; 
+import Map from '../Views/Map'; 
 
 export const Tab = createBottomTabNavigator({
   Home : {
-    screen: Home, 
+    screen: NavToBarTemplate, 
     navigationOptions: {
       tabBarLabel: '',
       tabBarIcon: <Image
         source={require('../../images/home.png')}
         style={{ height: 30, width: 30}}
-     />, 
-    },
+     />
+    }
   },
   LocalBar: {
     screen: LocalBar, 
@@ -38,12 +38,12 @@ export const Tab = createBottomTabNavigator({
      />, 
     },
   },
-  Feedback: {
-    screen: Feedback,
+  Map: {
+    screen: Map,
     navigationOptions: {
-      tabBarLabel: 'Feedback',
+      tabBarLabel: 'Map',
       tabBarIcon: <Image
-      source={require('../../images/comment.png')}
+      source={require('../../images/map.png')}
       style={{ height: 30, width: 30}}
    />, 
     },
